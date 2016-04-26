@@ -1,0 +1,13 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Task Manager</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<h1 th:text="'Task: ' + ${task.id}"/>
+<a href="/tasks">View Tasks</a>
+<p th:text="'Name: ' + ${task.name}"/>
+<p th:text="'Description: ' + ${task.description}"/>
+</body>
+</html>
